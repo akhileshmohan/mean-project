@@ -1,0 +1,31 @@
+<!-- 	<div>
+	This is the landing page for the myApp application -- Welcome!!!
+	</div>
+ -->
+	<!-- <div ng-controller="View0Ctrl as V0Ctrl">
+		{{V0Ctrl.name}}
+		<div ng-controller="ViewACtrl as VACtrl">
+			{{V0Ctrl.name}} - {{VACtrl.name}}
+			<div ng-controller="ViewBCtrl as VBCtrl">
+				{{V0Ctrl.name}} - {{VACtrl.name}} - {{VBCtrl.name}}
+			</div>
+		</div>
+	</div>
+ -->
+ 	
+	<div ng-controller="View0Ctrl">
+		<h1>BootStrap and AngularJS Image Gallery</h1>	
+		
+	
+		<hr class="style16">
+		<div class="row">
+		
+			<div ng-repeat="img in response" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<a href="{{img.imageURL}}"> 
+					<p>{{img.id}}</p>
+					<img ng-src="{{img.imageURL}}" alt="{{img.id}}" class="pull-left img-responsive img-thumbnail" > 
+				</a>
+			</div>
+		
+		</div>
+	</div>

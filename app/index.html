@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+<head>
+  <title>My AngularJS App</title>
+  <base href="/index.html">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate_v5.3.0/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate_v5.3.0/css/main.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+</head>
+<body style="font-family: 'Oxygen', 'sans-serif'">
+
+  <div class="container-fluid hidden-xs">
+    <div class="row">
+      <div class="col-sm-2 col-md-2 col-lg-2 text-center customDiv">
+        
+          <br />
+<!--           <p>
+            <a href="/view0" class="text-primary">
+              <abbr title="Main Page of myApp Site" >
+                <input type="" class="btn btn-primary btn-xs" value="View0">
+              </abbr>
+            </a> 
+            <br />
+            <a href="/view1" class="text-primary">
+              <input type="" class="btn btn-primary  btn-xs" value="View1">
+            </a> 
+            <br />
+            <a href="/view2" class="text-primary">
+              <input type="" class="btn btn-primary btn-xs" value="View2">
+            </a>
+          </p> -->
+
+          <div>
+            <ul class="list-unstyled bg-info ">
+              <a href="/view0" class="text-primary">
+                <li class="h5">Images</li>
+              </a>
+              <a href="/view1" class="text-primary">
+                <li class="h5">View1</li>
+              </a>
+              <a href="/view2" class="text-primary">
+                <li class="h5">View2</li>
+              </a>
+              <a href="/techstack" class="text-primary">
+                <li class="h5">Tech Stack</li>
+              </a>
+            </ul>
+          </div>
+
+          <hr class="style15">
+      </div>  
+      <div ng-view class="col-sm-10 col-md-10 col-lg-10">
+        <br />
+      </div>
+    </div>
+  </div>  
+
+<div class="container-fluid hidden-sm hidden-md hidden-lg">
+    <!-- <div class="row"> -->
+      <div id="indexDiv" class="col-xs-12 center-block">
+        <p class="text-center">
+          <br />
+          <a href="/view0" class="text-primary"> 
+            <input type="button" class="btn btn-primary btn-xs" value="Images">
+          </a>
+          <a href="/view1" class="text-primary">
+            <input type="button" class="btn btn-primary btn-xs" value="View1">
+          </a>
+          <a href="/view2" class="text-primary">
+            <input type="button" class="btn btn-primary btn-xs" value="View2">
+          </a>
+          <a href="/techstack" class="text-primary">
+              <input type="button" class="btn btn-primary btn-xs" value="Tech Stack">
+          </a>
+        </p>
+        <hr class="style14">
+      </div>  
+      <div ng-view class="col-xs-12">
+        <br />
+      </div>
+    <!-- </div> -->
+  </div>  
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.9/angular-filter.min.js"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> 
+
+  <script src="scripts/app.js"></script>
+  <script src="scripts/view3.js"></script>
+  <script src="scripts/view0.js"></script>
+  <script src="scripts/view1.js"></script>
+  <script src="scripts/stringService.js"></script>
+  <script src="scripts/view2.js"></script>
+  <script src="scripts/techstack.js"></script>
+  </body>
+</html>

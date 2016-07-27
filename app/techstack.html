@@ -1,0 +1,26 @@
+<div ng-controller="View4Ctrl">
+	<!-- {{message}} -->
+
+	<h1 class="h1">Technology Stack Page</h1>
+	<br />
+	<input type="button" ng-click="reloadData()" class="btn btn-primary pull-right" value="Reload Page">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Sl No.</th>
+				<th>Tech Name</th>
+				<th>Status</th>
+				<th>Complexity</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="tech in techStack">
+				<td>{{tech.sl}}</td>
+				<td>{{tech.name}}</td>
+				<td>{{tech.status}}</td>
+				<td>{{tech.complexity}}</td>
+			</tr>
+		</tbody>
+	</table>
+	</input>
+</div>

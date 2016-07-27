@@ -1,0 +1,54 @@
+<!--
+<p>This is the partial for view 1.</p>
+-->
+<div ng-controller="View1Ctrl" class='row'>
+
+<div class="col-md-2">
+
+	<table class="table">
+		<tr>
+			<td>Your String</td>
+			<td>
+				<input type="text" ng-model="input"/>
+			</td>
+		</tr>
+		<tr>
+			<td>Result</td>
+			<td>
+				<input type="text" ng-model="output"/>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="button" value="Process String" ng-click="transformString(input)"/>
+			</td>
+		</tr>
+	</table>
+
+<div class="col-md-10" class="btn btn-default btn-xs">
+	<!--unique is a custom filter derived from angular-filter from cloudfare. CDN link in index.html-->
+	<div ng-repeat="brand in response | unique: 'company' ">
+		<button ng-click="">{{brand.company | uppercase}}</button>		
+	</div>
+
+	<div>
+		<table>
+			<tr ng-repeat="brand in response | unique: 'company' ">
+				{{brand.company}}
+				<th>
+					
+				</th>
+			</tr>
+			</tr>
+		</table>
+
+	</div>
+	
+	
+	<br /> <br />
+
+</div>
+</div>
+</div>
+
